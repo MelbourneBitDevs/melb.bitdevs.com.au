@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>October 2023 - BitDevs Melbourne</title>
+    <meta
+      name="description"
+      content="October
+2023 - Melbourne BitDevs meetup discussing Bitcoin software, tools, research, protocol upgrades, mining and more."
+    />
+    <meta
+      name="keywords"
+      content="bitcoin, bitdevs, melbourne, cryptocurrency, blockchain, meetup, developer, socratic seminar"
+    />
+    <meta name="author" content="BitDevs Melbourne" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="October
+2023 - BitDevs Melbourne"
+    />
+    <meta
+      property="og:description"
+      content="October
+2023 - Melbourne BitDevs meetup discussing Bitcoin software, tools, research, protocol upgrades, mining and more."
+    />
+    <meta property="og:image" content="https://bitdevs.com.au/header.jpg" />
+    <meta property="og:url" content="https://bitdevs.com.au" />
+    <meta property="og:site_name" content="BitDevs Melbourne" />
+    <meta property="article:published_time" content="2023-10-26" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="October
+2023 - BitDevs Melbourne"
+    />
+    <meta
+      name="twitter:description"
+      content="October
+2023 - Melbourne BitDevs meetup discussing Bitcoin software, tools, research, protocol upgrades, mining and more."
+    />
+    <meta name="twitter:image" content="https://bitdevs.com.au/header.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <script>
+      // Apply Tailwind config from external stylesheet
+      if (
+        typeof tailwind !== "undefined" &&
+        typeof tailwind.config === "object"
+      ) {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: "#2e95a5",
+                secondary: "#ff9900",
+                tertiary: "#6b7280",
+              },
+              fontFamily: {
+                mono: ["Source Code Pro", "monospace"],
+              },
+            },
+          },
+        };
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../favicon.ico" />
+  </head>
+  <body class="font-mono bg-white text-primary min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+      <!-- Header -->
+      <header class="mb-12">
+        <h1 class="text-4xl font-semibold text-primary mb-2">
+          <a href="../index.html" class="hover:text-secondary"
+            >BitDevs Melbourne</a
+          >
+        </h1>
+        <nav class="text-lg">
+          <a href="../about.html" class="text-primary hover:text-secondary mr-6"
+            >About</a
+          >
+          <a
+            href="https://github.com/MelbourneBitDevs/MelbBitDevs/issues"
+            class="text-primary hover:text-secondary"
+            target="_blank"
+            rel="noopener"
+            >Next Month's Topics</a
+          >
+        </nav>
+      </header>
+
+      <!-- Post Content -->
+      <main>
+        <article class="prose prose-lg max-w-none">
+          <header class="mb-8">
+            <h1 class="text-3xl font-semibold text-primary mb-2">
+              October 2023
+            </h1>
+            <div class="text-gray-600 text-sm">
+              <span>2023-10-26</span>
+            </div>
+          </header>
+
+          <div
+            class="prose prose-lg max-w-none prose-a:text-secondary prose-a:no-underline hover:prose-a:underline prose-headings:text-primary"
+          >
+            <h3 id="bitvm">BitVM</h3>
+            <ul>
+              <li>
+                <a href="https://bitvm.org/bitvm.pdf"
+                  >https://bitvm.org/bitvm.pdf</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/robin_linus/status/1711378768059584723"
+                  >https://twitter.com/robin_linus/status/1711378768059584723</a
+                >
+              </li>
+            </ul>
+            <h3
+              id="tutorial-how-to-develop-a-non-custodial-bitcoin-lightning-wallet-using-flutter-and-ldk"
+            >
+              Tutorial: How to develop a Non-Custodial Bitcoin Lightning Wallet
+              using Flutter and LDK
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href="https://bolt.fun/story/tutorial-how-to-develop-a-non-custodial-bitcoin-lightning-wallet-using-flutter-and-ldk--1153"
+                  >https://bolt.fun/story/tutorial-how-to-develop-a-non-custodial-bitcoin-lightning-wallet-using-flutter-and-ldk–1153</a
+                >
+              </li>
+            </ul>
+            <h3 id="goldfish-spoofing-wallet-fingerprints">
+              Goldfish: Spoofing wallet fingerprints
+            </h3>
+            <ul>
+              <li>
+                <a href="https://gitlab.com/-/snippets/3611229"
+                  >https://gitlab.com/-/snippets/3611229</a
+                >
+              </li>
+              <li>
+                <a href="https://gitlab.com/1440000bytes/goldfish"
+                  >https://gitlab.com/1440000bytes/goldfish</a
+                >
+              </li>
+            </ul>
+            <h3 id="lightning-replacement-cycling-attacks">
+              Lightning Replacement Cycling Attacks
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.nobsbitcoin.com/how-does-a-lightning-replacement-cycling-attack-work/"
+                  >https://www.nobsbitcoin.com/how-does-a-lightning-replacement-cycling-attack-work/</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://lists.linuxfoundation.org/pipermail/lightning-dev/2023-October/004154.html"
+                  >https://lists.linuxfoundation.org/pipermail/lightning-dev/2023-October/004154.html</a
+                >
+              </li>
+            </ul>
+            <h3 id="hal-finney-was-not-satoshi-nakamoto">
+              Hal Finney was not Satoshi Nakamoto
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href="https://blog.lopp.net/hal-finney-was-not-satoshi-nakamoto/"
+                  >https://blog.lopp.net/hal-finney-was-not-satoshi-nakamoto/</a
+                >
+              </li>
+            </ul>
+            <h3 id="universal-money-address">Universal Money Address</h3>
+            <ul>
+              <li><a href="https://uma.me">https://uma.me</a></li>
+              <li>
+                <a
+                  href="https://twitter.com/davidmarcus/status/1716439333593563274"
+                  >https://twitter.com/davidmarcus/status/1716439333593563274</a
+                >
+              </li>
+            </ul>
+            <h3
+              id="opensats-to-provide-long-term-support-to-matt-morehouse-with-focus-on-lightning-network-security"
+            >
+              OPENSATS TO PROVIDE LONG TERM SUPPORT TO MATT MOREHOUSE WITH FOCUS
+              ON LIGHTNING NETWORK SECURITY
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href="https://snort.social/e/note13aerft6q5vq6sca0klt24476ngq2h7w06gmndt7qtlj6hcc756qqgd9hc0"
+                  >https://snort.social/e/note13aerft6q5vq6sca0klt24476ngq2h7w06gmndt7qtlj6hcc756qqgd9hc0</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://opensats.org/blog/matt-morehouse-lightning-security-lts-grant"
+                  >https://opensats.org/blog/matt-morehouse-lightning-security-lts-grant</a
+                >
+              </li>
+            </ul>
+            <h3 id="marathon-mined-an-invalid-block">
+              Marathon mined an invalid block
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.nobsbitcoin.com/marapools-invalid-block-809478-had-a-transaction-ordering-issue/"
+                  >https://www.nobsbitcoin.com/marapools-invalid-block-809478-had-a-transaction-ordering-issue/</a
+                >
+              </li>
+            </ul>
+            <h3 id="rot13maxi-brc20-disrespectooor">
+              Rot13maxi BRC20 disrespectooor
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href="https://twitter.com/ordinalenjoyer/status/1709029230313390334"
+                  >https://twitter.com/ordinalenjoyer/status/1709029230313390334</a
+                >
+              </li>
+            </ul>
+            <h3 id="other-links">Other Links</h3>
+            <ul>
+              <li>
+                <a href="https://www.amiunique.org/fingerprint"
+                  >https://www.amiunique.org/fingerprint</a
+                >
+              </li>
+            </ul>
+          </div>
+        </article>
+      </main>
+
+      <!-- Footer -->
+      <footer class="mt-16 pt-8 border-t border-gray-200 text-center">
+        <a
+          href="https://utxo.club"
+          class="text-xl hover:opacity-75"
+          target="_blank"
+          rel="noopener"
+          >🧡</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>

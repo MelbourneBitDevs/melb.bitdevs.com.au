@@ -1,0 +1,110 @@
+html {
+  background: linear-gradient(125deg, #000000, #1a1a1a);
+  min-height: 100vh;
+}
+
+html, body {
+  font-family: $body-font;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $font-color;
+
+  @media (max-width: $large-screen) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $mid-screen) {
+    font-size: 13px;
+  }
+
+  @media (max-width: $small-screen) {
+    font-size: 12px;
+  }
+}
+
+body {
+  position: relative;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(6, 156, 86, 0.1) 0px,
+      rgba(6, 156, 86, 0.1) 2px,
+      transparent 2px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(6, 156, 86, 0.1) 0px,
+      rgba(6, 156, 86, 0.1) 2px,
+      transparent 2px,
+      transparent 20px
+    );
+  animation: gradientMove 20s linear infinite;
+  min-height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200px 200px;  /* Multiple of pattern size (20px) */
+  }
+}
+
+
+.Site {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.875);
+
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba($primary-color, 0.8);
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  color:$primary-color;
+  font-weight: bold;
+  color: $primary-color;
+}
+
+h4, h5, h6 {
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

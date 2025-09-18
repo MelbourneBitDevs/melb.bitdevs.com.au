@@ -1,0 +1,35 @@
+/* BitDevs Melbourne - Unified Styles */
+
+/* Import Tailwind */
+@import url('https://cdn.tailwindcss.com');
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+
+/* Custom CSS Variables */
+:root {
+  --color-primary: #2e95a5;
+  --color-secondary: #ff9900;
+  --font-mono: 'Source Code Pro', monospace;
+}
+
+/* Base styles that work with Tailwind */
+body {
+  font-family: var(--font-mono);
+  background-color: white;
+  color: var(--color-primary);
+  min-height: 100vh;
+}
+
+/* Custom utility classes */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.hover\:text-secondary:hover {
+  color: var(--color-secondary);
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - BitDevs Melbourne</title>
+    <meta
+      name="description"
+      content="Melbourne BitDevs is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
+    />
+    <meta
+      name="keywords"
+      content="bitcoin, bitdevs, melbourne, cryptocurrency, blockchain, meetup, developer, socratic seminar"
+    />
+    <meta name="author" content="BitDevs Melbourne" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About - BitDevs Melbourne" />
+    <meta
+      property="og:description"
+      content="Melbourne BitDevs is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
+    />
+    <meta property="og:image" content="https://bitdevs.com.au/header.jpg" />
+    <meta property="og:url" content="https://bitdevs.com.au/about.html" />
+    <meta property="og:site_name" content="BitDevs Melbourne" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About - BitDevs Melbourne" />
+    <meta
+      name="twitter:description"
+      content="Melbourne BitDevs is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
+    />
+    <meta name="twitter:image" content="https://bitdevs.com.au/header.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // Apply Tailwind config from external stylesheet
+      if (
+        typeof tailwind !== "undefined" &&
+        typeof tailwind.config === "object"
+      ) {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: "#2e95a5",
+                secondary: "#ff9900",
+                tertiary: "#6b7280",
+              },
+              fontFamily: {
+                mono: ["Source Code Pro", "monospace"],
+              },
+            },
+          },
+        };
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body class="font-mono bg-white text-primary min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+      <!-- Header -->
+      <header class="mb-12">
+        <h1 class="text-4xl font-semibold text-primary mb-2">
+          <a href="index.html" class="hover:text-secondary"
+            >BitDevs Melbourne</a
+          >
+        </h1>
+        <nav class="text-lg">
+          <a href="#" class="text-primary hover:text-secondary mr-6">About</a>
+          <a
+            href="https://github.com/MelbourneBitDevs/MelbBitDevs/issues"
+            class="text-primary hover:text-secondary"
+            target="_blank"
+            rel="noopener"
+            >Next Month's Topics</a
+          >
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main class="prose prose-lg max-w-none">
+        <h1 class="text-3xl font-semibold mb-6">MelbBitdevs</h1>
+
+        <p class="mb-4">
+          Melbourne Bitdevs is held on the last Thursday of every month at 6PM.
+        </p>
+
+        <p class="mb-6">
+          As a group, we discuss the latest Bitcoin news from a technical
+          perspective. Sometimes diverging into adjacent fields of privacy, self
+          hosting, free software, and more!
+        </p>
+
+        <p class="mb-8">
+          <strong
+            ><a
+              href="https://www.meetup.com/melbourne-bitcoin-only"
+              class="text-secondary hover:text-tertiary hover:underline"
+              target="_blank"
+              rel="noopener"
+              >See the meetup page</a
+            >
+            to join our group and confirm event details!</strong
+          >
+        </p>
+
+        <p class="mb-8">
+          Please feel free to ping someone in the community if joining approval
+          is taking too long!
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4">News items for this month</h2>
+
+        <p class="mb-8">
+          Please suggest any noteworthy topics for next month in the
+          <a
+            href="https://github.com/MelbourneBitDevs/MelbBitDevs/issues"
+            class="text-secondary hover:text-tertiary hover:underline"
+            target="_blank"
+            rel="noopener"
+            >GitHub issue</a
+          >! We're open to discussing pretty much anything Bitcoin or
+          Bitcoin-adjacent!
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4">Things to note</h2>
+
+        <p class="mb-4">Attendence is often larger than meetup page RSVPs.</p>
+
+        <p class="mb-4">
+          This event is not streamed online, to preserve free discussion,
+          atmosphere, engagement, and community.
+        </p>
+
+        <p class="mb-8">
+          To facillitate optimal free and open discussion, privacy of attendees
+          is taken seriously, absolutely no photos/recordings without explicit
+          consent from all parties.
+          <a
+            href="https://en.wikipedia.org/wiki/Chatham_House_Rule"
+            class="text-secondary hover:text-tertiary hover:underline"
+            target="_blank"
+            rel="noopener"
+            >Chatham house rule</a
+          >
+          applies.
+        </p>
+
+        <hr class="my-8 border-gray-300" />
+
+        <h2 class="text-2xl font-semibold mb-4">Group Activities</h2>
+
+        <p class="mb-4">
+          We aim to occasionally try new software or tutorials as a group,
+          building applicable skills within a supportive group environment. It
+          may be useful to bring a laptop machine along with you! MacOS or Linux
+          preferred (for windows
+          <a
+            href="https://www.makeuseof.com/tag/install-linux-windows-vmware-virtual-machine/"
+            class="text-secondary hover:text-tertiary hover:underline"
+            target="_blank"
+            rel="noopener"
+            >you could use a virtual machine</a
+          >).
+        </p>
+      </main>
+
+      <!-- Footer -->
+      <footer class="mt-16 pt-8 border-t border-gray-200 text-center">
+        <a
+          href="https://utxo.club"
+          class="text-xl hover:opacity-75"
+          target="_blank"
+          rel="noopener"
+          >🧡</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>

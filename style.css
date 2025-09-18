@@ -1,0 +1,84 @@
+/* BitDevs Melbourne - Unified Stylesheet */
+
+/* CSS Variables for consistent theming */
+:root {
+  --color-primary: #2e95a5;
+  --color-secondary: #ff9900;
+  --color-tertiary: #6b7280;
+  --color-background: #ffffff;
+  --color-text: #2e95a5;
+}
+
+/* Custom styling for post content */
+
+/* Post content headers (scoped to .prose to avoid affecting site headers) */
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose h1 { font-size: 2rem; line-height: 2.5rem; }
+.prose h2 { font-size: 1.75rem; line-height: 2.25rem; }
+.prose h3 { font-size: 1.5rem; line-height: 2rem; }
+.prose h4 { font-size: 1.25rem; line-height: 1.75rem; }
+.prose h5 { font-size: 1.125rem; line-height: 1.625rem; }
+.prose h6 { font-size: 1rem; line-height: 1.5rem; }
+
+/* List styling with hyphens */
+.prose ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.prose ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose ul li:before {
+  content: '-';
+  position: absolute;
+  left: 0;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Link styling with hover effects */
+.prose a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.prose a:hover {
+  color: var(--color-tertiary);
+  text-decoration: underline;
+}
+
+/* Paragraph spacing */
+.prose p {
+  margin-bottom: 1rem;
+}
+
+/* Navigation and site-wide link hover effects */
+.hover\:text-secondary:hover {
+  color: var(--color-secondary);
+}
+
+.hover\:text-tertiary:hover {
+  color: var(--color-tertiary);
+}

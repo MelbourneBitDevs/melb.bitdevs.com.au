@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BitDevs Melbourne</title>
+    <meta
+      name="description"
+      content="Melbourne BitDevs is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
+    />
+    <meta property="og:title" content="BitDevs Melbourne" />
+    <meta
+      property="og:description"
+      content="Melbourne BitDevs is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
+    />
+    <meta property="og:url" content="https://bitdevs.com.au" />
+    <meta name="twitter:title" content="BitDevs Melbourne" />
+    <meta
+      name="twitter:description"
+      content="Melbourne BitDevs is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
+    />
+
+    <!-- Common head includes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // Apply Tailwind config from external stylesheet
+      if (
+        typeof tailwind !== "undefined" &&
+        typeof tailwind.config === "object"
+      ) {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: "#2e95a5",
+                secondary: "#ff9900",
+                tertiary: "#6b7280",
+              },
+              fontFamily: {
+                mono: ["Source Code Pro", "monospace"],
+              },
+            },
+          },
+        };
+      }
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="bitcoin, bitdevs, melbourne, cryptocurrency, blockchain, meetup, developer, socratic seminar"
+    />
+    <meta name="author" content="BitDevs Melbourne" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bitdevs.com.au/header.jpg" />
+    <meta property="og:site_name" content="BitDevs Melbourne" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bitdevs.com.au/header.jpg" />
+  </head>
+  <body class="font-mono bg-white text-primary min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+      <!-- Header -->
+      <header class="mb-12">
+        <h1 class="text-4xl font-semibold text-primary mb-2">
+          <a href="/" class="hover:text-secondary">BitDevs Melbourne</a>
+        </h1>
+        <nav class="text-lg">
+          <a href="about.html" class="text-primary hover:text-secondary mr-6"
+            >About</a
+          >
+          <a
+            href="https://github.com/MelbourneBitDevs/MelbBitDevs/issues"
+            class="text-primary hover:text-secondary"
+            target="_blank"
+            rel="noopener"
+            >Next Month's Topics</a
+          >
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <div class="mb-8">
+          <p class="text-lg mb-6 leading-relaxed">
+            Melbourne BitDevs is an in-person meetup held monthly for
+            discussing: Bitcoin software, tools, research, protocol upgrades
+            (BIPs), mining and more.
+          </p>
+
+          <div class="mb-8 p-4 bg-gray-50 rounded">
+            <p class="text-sm text-gray-700">
+              Please suggest any noteworthy topics for next month in the
+              <a
+                href="https://github.com/MelbourneBitDevs/MelbBitDevs/issues"
+                class="text-secondary hover:underline"
+                target="_blank"
+                rel="noopener"
+                >GitHub issue</a
+              >! We're open to discussing pretty much anything Bitcoin or
+              Bitcoin-adjacent!
+            </p>
+          </div>
+        </div>
+
+        <!-- All Events -->
+        <section>
+          <h2 class="text-2xl font-semibold mb-6">Recent Meetups</h2>
+          <div class="space-y-1" id="all-posts">
+            <!-- Posts will be populated by JavaScript -->
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="mt-16 pt-8 border-t border-gray-200 text-center">
+        <a
+          href="https://utxo.club"
+          class="text-xl hover:opacity-75"
+          target="_blank"
+          rel="noopener"
+          >🧡</a
+        >
+      </footer>
+    </div>
+
+    <script>
+      const allPosts = [
+        {
+          date: "2025-08-28",
+          title: "August 2025",
+          url: "posts/2025-08-28-August.html",
+        },
+        {
+          date: "2025-07-31",
+          title: "July 2025",
+          url: "posts/2025-07-31-July.html",
+        },
+        {
+          date: "2025-06-26",
+          title: "June 2025",
+          url: "posts/2025-06-26-June.html",
+        },
+        {
+          date: "2025-05-29",
+          title: "May 2025",
+          url: "posts/2025-05-29-May.html",
+        },
+        {
+          date: "2025-04-24",
+          title: "April 2025",
+          url: "posts/2025-04-24-April.html",
+        },
+        {
+          date: "2025-03-28",
+          title: "March 2025 (Beechworth Bushbash)",
+          url: "posts/2025-03-28-March.html",
+        },
+        {
+          date: "2025-02-27",
+          title: "February 2025",
+          url: "posts/2025-02-27-February.html",
+        },
+        {
+          date: "2025-01-30",
+          title: "January 2025",
+          url: "posts/2025-01-30-January.html",
+        },
+        {
+          date: "2024-12-19",
+          title: "December 2024",
+          url: "posts/2024-12-19-December.html",
+        },
+        {
+          date: "2024-11-28",
+          title: "November 2024",
+          url: "posts/2024-11-28-November.html",
+        },
+        {
+          date: "2024-10-31",
+          title: "October 2024",
+          url: "posts/2024-10-31-October-24.html",
+        },
+        {
+          date: "2024-09-26",
+          title: "September 2024",
+          url: "posts/2024-09-26-September-24.html",
+        },
+        {
+          date: "2024-08-29",
+          title: "August 2024",
+          url: "posts/2024-08-29-August-24.html",
+        },
+        {
+          date: "2024-06-27",
+          title: "June 2024",
+          url: "posts/2024-06-27-June-24.html",
+        },
+        {
+          date: "2024-05-30",
+          title: "May 2024",
+          url: "posts/2024-05-30-May-24.html",
+        },
+        {
+          date: "2024-04-25",
+          title: "April 2024",
+          url: "posts/2024-04-28-April-24.html",
+        },
+        {
+          date: "2024-03-28",
+          title: "March 2024",
+          url: "posts/2024-03-28-March-24.html",
+        },
+        {
+          date: "2024-02-29",
+          title: "February 2024",
+          url: "posts/2024-02-29-Feb-24.html",
+        },
+        {
+          date: "2024-01-25",
+          title: "January 2024",
+          url: "posts/2024-01-25-January-24.html",
+        },
+        {
+          date: "2023-11-30",
+          title: "November 2023",
+          url: "posts/2023-11-30-November-30.html",
+        },
+        {
+          date: "2023-10-26",
+          title: "October 2023",
+          url: "posts/2023-10-26-October-23.html",
+        },
+        {
+          date: "2023-09-28",
+          title: "September 2023",
+          url: "posts/2023-09-28-September-23.html",
+        },
+        {
+          date: "2023-08-31",
+          title: "August 2023",
+          url: "posts/2023-08-31-August-23.html",
+        },
+        {
+          date: "2023-07-27",
+          title: "July 2023",
+          url: "posts/2023-07-27-July-23.html",
+        },
+        {
+          date: "2023-06-29",
+          title: "June 2023",
+          url: "posts/2023-06-29-June-23.html",
+        },
+        {
+          date: "2023-05-25",
+          title: "May 2023",
+          url: "posts/2023-05-25-May-23.html",
+        },
+        {
+          date: "2023-05-18",
+          title: "New Melbourne Bitdevs Website!",
+          url: "posts/2023-05-18-new-site.html",
+        },
+        {
+          date: "2023-04-27",
+          title: "April 2023",
+          url: "posts/2023-04-27-April-23.html",
+        },
+        {
+          date: "2023-03-30",
+          title: "March 2023",
+          url: "posts/2023-03-30-March-23.html",
+        },
+        {
+          date: "2023-02-23",
+          title: "February 2023",
+          url: "posts/2023-02-23-Feb-23.html",
+        },
+        {
+          date: "2022-10-20",
+          title: "October 2022",
+          url: "posts/2022-10-20-Oct-22.html",
+        },
+      ];
+
+      const postsContainer = document.getElementById("all-posts");
+      allPosts.forEach((post) => {
+        const postElement = document.createElement("div");
+        postElement.className = "py-1";
+        postElement.innerHTML = `
+                <a href="${post.url}" class="text-primary hover:text-secondary">${post.title}</a>
+            `;
+        postsContainer.appendChild(postElement);
+      });
+    </script>
+  </body>
+</html>
