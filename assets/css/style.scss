@@ -16,10 +16,10 @@ $small-screen: 400px;
 $mid-screen: 768px;
 $large-screen: 1024px;
 
-@import './reset';
-@import './global';
-@import './header';
-@import './footer';
-@import './home';
-@import './post';
-@import './blog';
+@import 'reset';
+@import 'global';
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'post';
+@import 'blog';
