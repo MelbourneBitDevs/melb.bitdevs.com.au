@@ -4,18 +4,18 @@
     <title>BitDevs Melbourne</title>
     <meta
       name="description"
-      content="Melbourne BitDevs is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
+      content="BitDevs Melbourne is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
     />
     <meta property="og:title" content="BitDevs Melbourne" />
     <meta
       property="og:description"
-      content="Melbourne BitDevs is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
+      content="BitDevs Melbourne is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
     />
     <meta property="og:url" content="https://bitdevs.com.au" />
     <meta name="twitter:title" content="BitDevs Melbourne" />
     <meta
       name="twitter:description"
-      content="Melbourne BitDevs is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
+      content="BitDevs Melbourne is an in-person meetup held monthly for discussing: Bitcoin software, tools, research, protocol upgrades (BIPs), mining and more."
     />
 
     <!-- Common head includes -->
@@ -31,9 +31,14 @@
           theme: {
             extend: {
               colors: {
-                primary: "#2e95a5",
+                primary: "#00ffff",
                 secondary: "#ff9900",
-                tertiary: "#6b7280",
+                tertiary: "#888",
+                background: "#0a0a0f",
+                surface: "#1a1a2e",
+                text: "#e0e0e0",
+                accent: "#7c3aed",
+                muted: "#404040",
               },
               fontFamily: {
                 mono: ["Source Code Pro", "monospace"],
@@ -61,20 +66,28 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://bitdevs.com.au/header.jpg" />
   </head>
-  <body class="font-mono bg-white text-primary min-h-screen">
+  <body class="font-mono bg-background text-text min-h-screen">
     <div class="container mx-auto px-4 py-8 max-w-4xl">
       <!-- Header -->
-      <header class="mb-12">
-        <h1 class="text-4xl font-semibold text-primary mb-2">
-          <a href="/" class="hover:text-secondary">BitDevs Melbourne</a>
-        </h1>
-        <nav class="text-lg">
-          <a href="about.html" class="text-primary hover:text-secondary mr-6"
+      <header class="mb-12 relative">
+        <div
+          class="hex-accent inline-block p-4 rounded-lg bg-surface/50 backdrop-blur-sm mb-4"
+        >
+          <h1 class="text-4xl font-semibold text-primary mb-2 relative">
+            <a href="/" class="hover:text-secondary transition-colors"
+              >BitDevs Melbourne</a
+            >
+          </h1>
+        </div>
+        <nav class="text-lg flex flex-wrap gap-6">
+          <a
+            href="about.html"
+            class="hex-accent px-3 py-1 rounded text-primary hover:text-secondary transition-colors border border-primary/20 hover:border-secondary/40"
             >About</a
           >
           <a
             href="https://github.com/MelbourneBitDevs/MelbBitDevs/issues"
-            class="text-primary hover:text-secondary"
+            class="hex-accent px-3 py-1 rounded text-primary hover:text-secondary transition-colors border border-primary/20 hover:border-secondary/40"
             target="_blank"
             rel="noopener"
             >Next Month's Topics</a
@@ -85,41 +98,62 @@
       <!-- Main Content -->
       <main>
         <div class="mb-8">
-          <p class="text-lg mb-6 leading-relaxed">
-            Melbourne BitDevs is an in-person meetup held monthly for
-            discussing: Bitcoin software, tools, research, protocol upgrades
-            (BIPs), mining and more.
-          </p>
-
-          <div class="mb-8 p-4 bg-gray-50 rounded">
-            <p class="text-sm text-gray-700">
-              Please suggest any noteworthy topics for next month in the
-              <a
-                href="https://github.com/MelbourneBitDevs/MelbBitDevs/issues"
-                class="text-secondary hover:underline"
-                target="_blank"
-                rel="noopener"
-                >GitHub issue</a
-              >! We're open to discussing pretty much anything Bitcoin or
-              Bitcoin-adjacent!
+          <div
+            class="bg-surface/50 backdrop-blur-sm rounded-lg p-6 border border-primary/10 relative overflow-hidden"
+          >
+            <p class="text-lg mb-6 leading-relaxed text-text relative z-10">
+              BitDevs Melbourne is an in-person meetup held monthly for
+              discussing: Bitcoin software, tools, research, protocol upgrades
+              (BIPs), mining and more.
             </p>
+
+            <div
+              class="mb-8 p-4 bg-background/80 rounded border border-secondary/20 relative"
+            >
+              <div
+                class="absolute top-1 left-1 w-2 h-2 bg-secondary rounded-full opacity-60"
+              ></div>
+              <p class="text-sm text-text/80 ml-4">
+                Please suggest any noteworthy topics for next month in the
+                <a
+                  href="https://github.com/MelbourneBitDevs/MelbBitDevs/issues"
+                  class="text-secondary hover:text-primary transition-colors underline decoration-secondary/40 hover:decoration-primary/60"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub issue</a
+                >! We're open to discussing pretty much anything Bitcoin or
+                Bitcoin-adjacent!*
+              </p>
+              <p class="text-xs text-text/60 mt-2">
+                *Except shitcoins or scams unless technically relevant.
+              </p>
+            </div>
           </div>
         </div>
 
         <!-- All Events -->
         <section>
-          <h2 class="text-2xl font-semibold mb-6">Recent Meetups</h2>
-          <div class="space-y-1" id="all-posts">
-            <!-- Posts will be populated by JavaScript -->
+          <div class="flex items-center mb-6">
+            <h2 class="text-2xl font-semibold text-primary">Recent Meetups</h2>
+            <div
+              class="flex-1 ml-4 h-px bg-gradient-to-r from-primary/40 to-transparent"
+            ></div>
+          </div>
+          <div class="bg-surface/30 rounded-lg p-6 border border-primary/10">
+            <div class="space-y-1" id="all-posts">
+              <!-- Posts will be populated by JavaScript -->
+            </div>
           </div>
         </section>
       </main>
 
       <!-- Footer -->
-      <footer class="mt-16 pt-8 border-t border-gray-200 text-center">
+      <footer
+        class="mt-16 pt-8 border-t border-primary/20 text-center relative"
+      >
         <a
           href="https://utxo.club"
-          class="text-xl hover:opacity-75"
+          class="text-xl hover:scale-110 transition-transform inline-block"
           target="_blank"
           rel="noopener"
           >🧡</a
@@ -287,11 +321,15 @@
       ];
 
       const postsContainer = document.getElementById("all-posts");
-      allPosts.forEach((post) => {
+      allPosts.forEach((post, index) => {
         const postElement = document.createElement("div");
-        postElement.className = "py-1";
+        postElement.className =
+          "py-3 px-4 rounded hover:bg-background/50 transition-colors border-l-2 border-transparent hover:border-secondary/60 group";
         postElement.innerHTML = `
-                <a href="${post.url}" class="text-primary hover:text-secondary">${post.title}</a>
+                <div class="flex items-center">
+                  <span class="text-secondary text-sm mr-3 opacity-80 group-hover:opacity-100 transition-opacity">-</span>
+                  <a href="${post.url}" class="text-primary hover:text-secondary transition-colors font-medium text-base">${post.title}</a>
+                </div>
             `;
         postsContainer.appendChild(postElement);
       });

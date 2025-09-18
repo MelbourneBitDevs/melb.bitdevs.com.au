@@ -45,9 +45,14 @@
           theme: {
             extend: {
               colors: {
-                primary: "#2e95a5",
+                primary: "#00ffff",
                 secondary: "#ff9900",
-                tertiary: "#6b7280",
+                tertiary: "#888",
+                background: "#0a0a0f",
+                surface: "#1a1a2e",
+                text: "#e0e0e0",
+                accent: "#7c3aed",
+                muted: "#404040",
               },
               fontFamily: {
                 mono: ["Source Code Pro", "monospace"],
@@ -63,20 +68,28 @@
     />
     <link rel="icon" href="favicon.ico" />
   </head>
-  <body class="font-mono bg-white text-primary min-h-screen">
+  <body class="font-mono bg-background text-text min-h-screen">
     <div class="container mx-auto px-4 py-8 max-w-4xl">
       <!-- Header -->
-      <header class="mb-12">
-        <h1 class="text-4xl font-semibold text-primary mb-2">
-          <a href="index.html" class="hover:text-secondary"
-            >BitDevs Melbourne</a
+      <header class="mb-12 relative">
+        <div
+          class="hex-accent inline-block p-4 rounded-lg bg-surface/50 backdrop-blur-sm mb-4"
+        >
+          <h1 class="text-4xl font-semibold text-primary mb-2 relative">
+            <a href="index.html" class="hover:text-secondary transition-colors"
+              >BitDevs Melbourne</a
+            >
+          </h1>
+        </div>
+        <nav class="text-lg flex flex-wrap gap-6">
+          <a
+            href="#"
+            class="hex-accent px-3 py-1 rounded text-primary hover:text-secondary transition-colors border border-primary/20 hover:border-secondary/40"
+            >About</a
           >
-        </h1>
-        <nav class="text-lg">
-          <a href="#" class="text-primary hover:text-secondary mr-6">About</a>
           <a
             href="https://github.com/MelbourneBitDevs/MelbBitDevs/issues"
-            class="text-primary hover:text-secondary"
+            class="hex-accent px-3 py-1 rounded text-primary hover:text-secondary transition-colors border border-primary/20 hover:border-secondary/40"
             target="_blank"
             rel="noopener"
             >Next Month's Topics</a
@@ -86,10 +99,10 @@
 
       <!-- Main Content -->
       <main class="prose prose-lg max-w-none">
-        <h1 class="text-3xl font-semibold mb-6">MelbBitdevs</h1>
+        <h1 class="text-3xl font-semibold mb-6">BitDevs Melbourne</h1>
 
         <p class="mb-4">
-          Melbourne Bitdevs is held on the last Thursday of every month at 6PM.
+          BitDevs Melbourne is held on the last Thursday of every month at 6PM.
         </p>
 
         <p class="mb-6">
@@ -127,7 +140,11 @@
             rel="noopener"
             >GitHub issue</a
           >! We're open to discussing pretty much anything Bitcoin or
-          Bitcoin-adjacent!
+          Bitcoin-adjacent!*
+        </p>
+
+        <p class="text-xs text-text/60 mb-8">
+          *Except shitcoins or scams unless technically relevant.
         </p>
 
         <h2 class="text-2xl font-semibold mb-4">Things to note</h2>
@@ -153,7 +170,9 @@
           applies.
         </p>
 
-        <hr class="my-8 border-gray-300" />
+        <div
+          class="my-8 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"
+        ></div>
 
         <h2 class="text-2xl font-semibold mb-4">Group Activities</h2>
 
@@ -173,10 +192,12 @@
       </main>
 
       <!-- Footer -->
-      <footer class="mt-16 pt-8 border-t border-gray-200 text-center">
+      <footer
+        class="mt-16 pt-8 border-t border-primary/20 text-center relative"
+      >
         <a
           href="https://utxo.club"
-          class="text-xl hover:opacity-75"
+          class="text-xl hover:scale-110 transition-transform inline-block"
           target="_blank"
           rel="noopener"
           >🧡</a

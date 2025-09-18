@@ -4,16 +4,9 @@
 .Spotlight-V100
 .Trashes
 ._*
-.bundle
-.jekyll-cache/
-.jekyll-metadata
-.sass-cache/
 Icon?
 Thumbs.db
-_cache
-_site/
 ehthumbs.db
-vendor
 
 # To prevent accidental push of translations from
 # Transifex.

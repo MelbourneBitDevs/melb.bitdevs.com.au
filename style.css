@@ -1,12 +1,56 @@
-/* BitDevs Melbourne - Unified Stylesheet */
+/* BitDevs Melbourne - Computational Geometric Design */
 
 /* CSS Variables for consistent theming */
 :root {
-  --color-primary: #2e95a5;
+  --color-primary: #00ffff;
   --color-secondary: #ff9900;
-  --color-tertiary: #6b7280;
-  --color-background: #ffffff;
-  --color-text: #2e95a5;
+  --color-tertiary: #888;
+  --color-background: #0a0a0f;
+  --color-surface: #1a1a2e;
+  --color-text: #e0e0e0;
+  --color-accent: #7c3aed;
+  --color-muted: #404040;
+}
+
+/* Bitcoin network-inspired background pattern */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 25% 25%, rgba(255, 153, 0, 0.02) 0%, transparent 60%),
+    radial-gradient(circle at 75% 75%, rgba(0, 255, 255, 0.015) 0%, transparent 60%),
+    linear-gradient(45deg, transparent 49.8%, rgba(255, 153, 0, 0.008) 50%, transparent 50.2%);
+  background-size: 400px 400px, 500px 500px, 150px 150px;
+  background-position: 0 0, 200px 200px, 0 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Hexagonal accent elements */
+.hex-accent {
+  position: relative;
+}
+
+.hex-accent::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--color-primary), var(--color-accent), var(--color-secondary));
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hex-accent:hover::before {
+  opacity: 0.3;
 }
 
 /* Custom styling for post content */
@@ -17,6 +61,13 @@
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  position: relative;
+}
+
+.prose h1::before, .prose h2::before {
+  content: '▶ ';
+  color: var(--color-secondary);
+  font-size: 0.8em;
 }
 
 .prose h1 { font-size: 2rem; line-height: 2.5rem; }
@@ -40,11 +91,13 @@
 }
 
 .prose ul li:before {
-  content: '-';
+  content: '◯';
   position: absolute;
   left: 0;
   color: var(--color-secondary);
   font-weight: 600;
+  font-size: 0.8em;
+  top: 0.2em;
 }
 
 .prose ol {
@@ -81,4 +134,20 @@
 
 .hover\:text-tertiary:hover {
   color: var(--color-tertiary);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body::before {
+    background-size: 300px 300px, 400px 400px, 100px 100px;
+  }
+  
+  .hex-accent {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hex-accent:last-child {
+    margin-bottom: 0;
+  }
 }
